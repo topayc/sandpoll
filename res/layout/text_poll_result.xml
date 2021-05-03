@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" 
+        android:id ="@+id/text_poll_title"
+         android:textColor="#19435B"/>
+
+    <LinearLayout
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:isIndicator="true"
+            android:numStars="15"
+            android:stepSize="0.5" />
+        
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id ="@+id/text_poll_vote_count"
+        android:text="10" 
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

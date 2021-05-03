@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f2ed"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 계정 설정 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/account" />
+
+            <LinearLayout
+                android:id="@+id/change_pass_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hom_bg_card"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                   
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/change_pass"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/set_arrow_right" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/settingdelim" />
+
+                <LinearLayout
+                    android:id="@+id/channel_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/channel"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/set_arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 푸시 설정 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/push_setting" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hom_bg_card"
+                android:orientation="vertical" >
+
+                <!-- 폴 마감 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/push_poll_end"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/pucsh_poll_end_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/setting_checkbox_selector"
+                        android:button="@drawable/checkbox_bg" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/settingdelim" />
+
+                <!-- 코멘트 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/push_comment"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/push_comment_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/setting_checkbox_selector"
+                        android:button="@drawable/checkbox_bg" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/settingdelim" />
+
+                <!-- 답글 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/push_reply"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/push_reply_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/setting_checkbox_selector"
+                        android:button="@drawable/checkbox_bg" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/settingdelim" />
+
+                <!-- 투표수 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/push_vote_count"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/push_vote_count_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/setting_checkbox_selector"
+                        android:button="@drawable/checkbox_bg" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/settingdelim" />
+
+                <!-- 새로운 팔로워 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/push_new_follower"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/push_new_follower_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/setting_checkbox_selector"
+                        android:button="@drawable/checkbox_bg" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/settingdelim" />
+
+                <!-- 친구의 폴 생성 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/push_create_poll_by_friend"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/push_create_poll_by_friend_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/setting_checkbox_selector"
+                        android:button="@drawable/checkbox_bg" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/settingdelim" />
+
+                <!-- 투표수(참여한 폴 ) -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/push_vote_count1"
+                        android:textColor="#888888"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/push_vote_join_count_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/setting_checkbox_selector"
+                        android:button="@drawable/checkbox_bg" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hom_bg_card"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/log_out"
+                android:textColor="#888888"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

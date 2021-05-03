@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/follower_header_back"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="5dp"
+        android:text="아래의 친구들을 팔로워 해보세요\n다양한 친구들을 만나고 소통하실 수 있어요"
+ >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gen_prf_female_small"
+               android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gen_prf_female_small"
+              android:layout_marginLeft="5dp"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+              android:layout_marginLeft="5dp" 
+            android:layout_height="wrap_content"
+            android:background="@drawable/gen_prf_female_small" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/more" 
+          
+                   />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/poll_nav" />
+    
+    <ListView
+            android:id="@+id/poll_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="#e9e9e9"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/tranparent"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="false"
+             android:scrollbars="none" 
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/not_login_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2e9e2"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+         >
+
+    
+
+        <ListView
+            android:padding="5dp"
+            android:id="@+id/myhome_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2e9e2"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/tranparent"
+            android:dividerHeight="5dp"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="@null"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <!--
+             <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/hom_smile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/app_guide"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

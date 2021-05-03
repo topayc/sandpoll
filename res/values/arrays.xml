@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="left_menu_category">
+        <item >전체 보기</item>
+        <item >문화, 엔터테인먼트</item>
+        <item >전자기기, 컴퓨터</item>
+        <item >패션,스타일</item>
+        <item >일상 생활</item>
+        <item >장소,여행</item>
+        <item >정치,사회</item>
+        <item >관계, 연애</item>
+        <item >스포츠, 운동</item>
+        <item >기타</item>
+    </string-array> 
+    
+    <string-array name="right_menu_category" >
+        <item >등록</item>
+        <item >로그인</item>
+        <item >서비스 센터</item>
+    </string-array>
+</resources>

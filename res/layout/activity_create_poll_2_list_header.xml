@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poll_activate_period"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" 
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:id="@+id/one_day"
+                android:text="@string/one_day"
+                android:width="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:id="@+id/one_week"
+                android:gravity="center_horizontal"
+                android:text="@string/one_week"
+                android:width="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:id="@+id/one_month"
+                android:gravity="center_horizontal"
+                android:text="@string/one_month"
+                android:width="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:id="@+id/limitless_day"
+                android:gravity="right"
+                android:text="@string/limitless"
+                android:width="0dp" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:max="3"
+            android:id ="@+id/seekbar"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/seek_thumb"
+            android:progress="0" />
+    </LinearLayout>
+
+</LinearLayout>

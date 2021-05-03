@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/poll_nav" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageButton
+                android:id="@+id/select_category_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/category_select2" />
+
+            <EditText
+                android:id="@+id/poll_title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="3dp"
+                android:ems="10"
+                android:hint="@string/mycurious"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            
+            android:text ="폴 대표이미지를 선택하시려면  \n아래의 아이콘을 눌러주세요"
+            android:textColor="#aaaaaa"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/select_img_btn"
+            android:layout_marginTop="10dp"
+            android:background = "@drawable/camera1" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#cccccc">
+
+            <EditText
+                android:id="@+id/poll_content_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            	android:padding = "2dp"
+                android:gravity="top|left"
+                android:lines="10"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="@string/detail_explain"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

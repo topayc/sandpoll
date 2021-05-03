@@ -1,0 +1,140 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="leftBehindMenuScroll">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/leftbg</item>
+    </style>
+
+    <style name="rightBehindMenuScroll">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/rightbg</item>
+    </style>
+
+    <style name="behindMenuItemTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="behindMenuScrollContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        
+         <item name="android:paddingLeft">6dp</item>
+         <item name="android:paddingBottom">10dp</item>
+         <item name="android:paddingRight">10dp</item>
+         <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="behindMenuItemLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="behindMenuItemLabel2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="behindMenuDelim">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="behindMenuItemImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="itemDelimination">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="errorholder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="formTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="formfield">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="forminputbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="settingcontainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/hom_bg_card</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="settingdelim">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/hom_divider_line</item>
+    </style>
+
+    <style name="MyDialog.Animations">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowAnimationStyle">@style/MyDialog.Animations</item>
+    </style>
+    
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:indeterminateOnly">false</item> 
+		<item name="android:progressDrawable">@drawable/custom_ratingbar_full</item> 
+		<item name="android:minHeight">57dip</item> 
+		<item name="android:maxHeight">57dip</item>
+		<item name="android:thumb">@null</item> 
+	</style>
+
+
+</resources>

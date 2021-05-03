@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+     android:background="@drawable/hom_bg_card"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="3dp"
+        android:padding="0dp"
+         >
+
+        <ImageView
+            android:id="@+id/poll_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+         
+         	android:padding="0dp"
+            android:background="@drawable/test_image" />
+        
+        <ImageView
+            android:id="@+id/poll_image_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+         
+         	android:padding="0dp"
+            android:background="@drawable/black_overlay" />
+
+        <ImageView
+            android:id="@+id/poll_category_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/costant" />
+
+        <TextView
+            android:id="@+id/poll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/poll_category_image"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/poll_category_image"
+            android:text="좋아하는 영화는 무엇인가요? 아무것이나 원하시는 것 투표를 해주시면 땡큐!!"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+           
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/people"
+                android:id ="@+id/poll_vote_image" />
+
+            <TextView
+                android:id="@+id/poll_vote_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+         >
+
+        <TextView
+            android:id="@+id/poll_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="무기한"
+            android:textColor="#000000"
+            android:layout_marginRight="3dp"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/poll_period_image"
+            android:src="@drawable/period4"/>
+    </LinearLayout>
+
+</LinearLayout>
